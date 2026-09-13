@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Bull Privacy Policy</title>
+  <style>
+    :root {
+      --page-bg: #eef7f5;
+      --panel: #ffffff;
+      --text: #173227;
+      --muted: #60756b;
+      --soft: #dcece8;
+      --line: #b7d9d3;
+      --sage: #477a6b;
+      --sage-dark: #244a3e;
+      --sage-light: #f7fbfa;
+      --orange: #d98a45;
+      --shadow: rgba(30, 75, 62, 0.12);
+      --font: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 75% 5%, rgba(146, 197, 175, 0.24), transparent 22%),
+        radial-gradient(circle at 20% 85%, rgba(217, 138, 69, 0.08), transparent 18%),
+        var(--page-bg);
+      font-family: var(--font);
+      min-height: 100vh;
+      line-height: 1.65;
+    }
+
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 24px 80px;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--sage-dark);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--sage-dark);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.18rem;
+      box-shadow: 0 12px 28px var(--shadow);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav a:hover {
+      color: var(--sage-dark);
+    }
+
+    .policy-card {
+      background: var(--panel);
+      border: 1px solid rgba(71, 122, 107, 0.18);
+      border-radius: 30px;
+      box-shadow: 0 20px 80px var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--sage-dark), var(--sage));
+      color: #fff;
+      padding: 56px 56px 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.4);
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      box-shadow: 0 0 0 34px rgba(255,255,255,0.025), 0 0 0 70px rgba(255,255,255,0.025);
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 7px 14px;
+      border-radius: 99px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.24);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 4vw, 4rem);
+      line-height: 1.08;
+      margin: 0 0 16px;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      margin: 0;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.03rem;
+      max-width: 680px;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .meta-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-row span::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--orange);
+      display: inline-block;
+    }
+
+    .content {
+      padding: 40px 56px 56px;
+      background: var(--panel);
+    }
+
+    .notice {
+      background: var(--sage-light);
+      border-left: 4px solid var(--sage);
+      border-radius: 16px;
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 24px;
+    }
+
+    .notice strong {
+      color: var(--sage-dark);
+    }
+
+    .policy-body {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .policy-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .policy-section h2 {
+      font-size: 1.22rem;
+      color: var(--sage-dark);
+      margin: 0 0 12px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .section-number {
+      color: var(--orange);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .policy-section p {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .policy-section ul {
+      margin: 12px 0 0 20px;
+      padding: 0;
+      color: var(--muted);
+    }
+
+    .policy-section li {
+      margin-bottom: 10px;
+      padding-left: 5px;
+    }
+
+    .policy-section li::marker {
+      color: var(--sage);
+    }
+
+    .email {
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .email:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 760px) {
+      .site-header {
+        flex-wrap: wrap;
+      }
+
+      .nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .content {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <span>Focus Bull</span>
+      </div>
+      <nav class="nav">
+        <a href="#">Overview</a>
+        <a href="#">Privacy</a>
+        <a href="#">Policy</a>
+      </nav>
+    </header>
+
+    <main class="policy-card">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="tag">Focus Bull</span>
+          <h1>Privacy Policy</h1>
+          <p class="hero-copy">
+            Your privacy matters. We collect only the information necessary to power your focus workflow and improve the experience safely.
+          </p>
+          <div class="meta-row">
+            <span>Last Updated: September 12, 2026</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="notice">
+          <strong>Important:</strong> You must host this text on a public URL and link it in the Play Console.
+        </div>
+
+        <div class="policy-body">
+          <section class="policy-section">
+            <h2><span class="section-number">1.</span>Introduction</h2>
+            <p>
+              Focus Bull (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information when you use our mobile application.
+            </p>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">2.</span>Information We Collect</h2>
+            <ul>
+              <li><strong>Personal Information:</strong> When you create an account, we collect your email address and password via <strong>Firebase Authentication</strong>.</li>
+              <li><strong>User Content:</strong> We store your tasks, focus session history, and productivity statistics in <strong>Google Firebase Firestore</strong> and locally on your device using <strong>Room</strong>.</li>
+              <li><strong>Usage Data:</strong> We use <strong>Google Analytics for Firebase</strong> to collect anonymous usage data (e.g., app opens, feature usage) to help us improve the app.</li>
+              <li><strong>Media Files:</strong> If you choose to set a custom background, the app accesses local storage to display your selected image. We do not upload your personal images to our servers.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">3.</span>How We Use Information</h2>
+            <ul>
+              <li>To provide and maintain the service (syncing your tasks).</li>
+              <li>To personalize your experience (background settings).</li>
+              <li>To monitor app performance and fix bugs.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">4.</span>Third-Party Services</h2>
+            <p>
+              We use the following third-party providers who may collect data according to their own policies:
+            </p>
+            <ul>
+              <li><strong>Google Play Services</strong></li>
+              <li><strong>Firebase (Authentication, Firestore, Analytics)</strong></li>
+            </ul>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">5.</span>Data Security</h2>
+            <p>
+              We value your trust. Your account data is secured by Firebase&apos;s industry-standard encryption. However, no method of transmission over the internet is 100% secure.
+            </p>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">6.</span>Your Choices</h2>
+            <p>
+              You can update your account information or delete your account at any time through the app settings.
+            </p>
+          </section>
+
+          <section class="policy-section">
+            <h2><span class="section-number">7.</span>Contact Us</h2>
+            <p>
+              If you have any questions about this Privacy Policy, contact us at: <a class="email" href="mailto:your.email@example.com">your.email@example.com</a>
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

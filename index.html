@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,700;8..144,900&display=swap">
 <style>
-/* Layout: one dark night-focus page; hero = copy + live phone, then a quiet feature grid, a teal "coming next" band, footer. */
+/* Layout: one dark night-focus page; hero = copy + live phone, then a quiet feature grid, how it works, footer. */
 :root{
   --bg:#111320; --bg-2:#1B1D2E; --surface:#24273B; --surface-2:#2E3148;
   --fg:#FFFFFF; --fg-2:#B4B8C8; --muted:#8E92A8; --line:rgba(255,255,255,.08);
@@ -142,22 +142,6 @@ section{padding-block:88px}
 .steps h3{font-size:17px;margin-bottom:4px}
 .steps p{color:var(--fg-2);font-size:15px}
 
-/* coming next */
-.next{background:linear-gradient(180deg,#0E2224 0%,#0B1A1C 100%)}
-.next .eyebrow{color:#7FC8BE}
-.next .sec-head p{color:#A7D9D2}
-.soon{font-size:10px;font-weight:700;letter-spacing:.5px;color:var(--teal);background:var(--teal-soft);padding:3px 7px;border-radius:6px;align-self:flex-start}
-.next .feat{background:rgba(16,40,42,.92)}
-.next .grid{grid-template-columns:repeat(6,minmax(0,1fr))}
-.next .grid .feat{grid-column:span 2}
-.next .grid .feat:nth-child(n+4){grid-column:span 3}
-@media (max-width:960px){.next .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.next .grid .feat,.next .grid .feat:nth-child(n+4){grid-column:auto}.next .grid .feat:last-child{grid-column:1/-1}}
-@media (max-width:520px){.next .grid{grid-template-columns:1fr}}
-.next .feat p{color:#A7D9D2}
-.next .ico{background:#183538}
-.bull-row{display:flex;align-items:center;gap:24px;margin-top:32px;padding:20px 24px;border-radius:24px;background:rgba(16,40,42,.92);flex-wrap:wrap}
-.bull-row p{color:#A7D9D2;flex:1 1 260px;min-width:0}
-.bull-row strong{color:var(--fg)}
 
 /* final cta */
 .final .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px}
@@ -336,47 +320,6 @@ footer a:hover{color:var(--fg)}
         <li><span class="n">2</span><div><h3>Start the timer</h3><p>Focus until the session ends. Put the phone down and let FocusBull keep time.</p></div></li>
         <li><span class="n">3</span><div><h3>Take a real break</h3><p>Rest, then go again. Your sessions add up in Stats.</p></div></li>
       </ol>
-    </div>
-  </section>
-
-  <section class="next" id="coming">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Coming next</span>
-        <h2>A calmer companion for your focus</h2>
-        <p>We're working on updates that make focusing feel lighter. Here's what's on the way.</p>
-      </div>
-      <div class="grid">
-        <article class="feat">
-          <span class="soon">COMING SOON</span>
-          <h3>Breathing ring</h3>
-          <p>A soft glow behind the timer swells and fades slowly, so you breathe slower without thinking about it.</p>
-        </article>
-        <article class="feat">
-          <span class="soon">COMING SOON</span>
-          <h3>Soundscapes</h3>
-          <p>Mix rain, lake, forest, brown noise and lo-fi, each with its own volume.</p>
-        </article>
-        <article class="feat">
-          <span class="soon">COMING SOON</span>
-          <h3>Break restore</h3>
-          <p>Breaks turn teal with a guided breath and short prompts: look away, stretch, drink water.</p>
-        </article>
-        <article class="feat">
-          <span class="soon">COMING SOON</span>
-          <h3>Focus rating</h3>
-          <p>Set one intention before you start and rate your focus after, so you can see session quality over time.</p>
-        </article>
-        <article class="feat">
-          <span class="soon">COMING SOON</span>
-          <h3>Projects for your tasks</h3>
-          <p>Group tasks into projects like Study, Work or Freelance, so a long list stays tidy and you can focus on one project at a time.</p>
-        </article>
-      </div>
-      <div class="bull-row">
-        <svg viewBox="0 0 120 72" width="120" height="72" role="img" aria-label="The FocusBull bull grazing"><line x1="8" y1="66" x2="114" y2="66" stroke="rgba(255,255,255,.15)"/><path d="M101 33C108 38 106 46 110 50" stroke="#E9525A" stroke-width="2.5" fill="none" stroke-linecap="round"/><g fill="#E9525A"><ellipse cx="72" cy="36" rx="30" ry="15"/><rect x="52" y="44" width="6" height="22" rx="3"/><rect x="62" y="46" width="6" height="20" rx="3"/><rect x="80" y="46" width="6" height="20" rx="3"/><rect x="90" y="44" width="6" height="22" rx="3"/><path d="M46 30C38 34 34 44 34 52L44 54C46 46 50 40 54 38Z"/><ellipse cx="36" cy="57" rx="10" ry="7"/></g><path d="M30 53C24 51 22 45 25 41M41 52C45 47 45 43 42 40" stroke="#FFB27A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M22 66l2-6M28 66l-1-7M46 66l2-5M50 66l-1-6" stroke="#4ADE80" stroke-width="2" stroke-linecap="round"/></svg>
-        <p><strong>Meet the bull.</strong> A small companion that grazes while you focus, rests when you pause, stretches on breaks and grows as your streak builds.</p>
-      </div>
     </div>
   </section>
 

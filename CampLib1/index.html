@@ -5,9 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Get FocusBull</title>
-<!-- Promo link for campaign CampLib1: forwards to the Play Store with UTM tags so installs show up in Play Console. -->
-<meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.khowarlab.focusbull&amp;utm_source=CampLib1&amp;utm_campaign=CampLib1">
-<script>location.replace("https://play.google.com/store/apps/details?id=com.khowarlab.focusbull&utm_source=CampLib1&utm_campaign=CampLib1");</script>
+<!-- Promo link for campaign CampLib1: logs the visit in Google Analytics, then forwards to the Play Store with UTM tags so installs show up in Play Console. -->
+<noscript><meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.khowarlab.focusbull&amp;utm_source=CampLib1&amp;utm_campaign=CampLib1"></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S97S87SJTR"></script>
+<script>
+var PLAY_URL = "https://play.google.com/store/apps/details?id=com.khowarlab.focusbull&utm_source=CampLib1&utm_campaign=CampLib1";
+var gone = false;
+function go(){ if (!gone) { gone = true; location.replace(PLAY_URL); } }
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-S97S87SJTR', {
+  campaign_source: 'CampLib1',
+  campaign_name: 'CampLib1',
+  event_callback: go
+});
+// Don't keep the visitor waiting if analytics is blocked or slow.
+setTimeout(go, 1200);
+</script>
 <style>body{margin:0;background:#111320;color:#fff;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;padding:16px;text-align:center}a{color:#FF5A5F}</style>
 </head>
 <body>
